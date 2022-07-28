@@ -10,6 +10,10 @@ function setGradient() {
     printable.textContent = body.style.background;
 }
 
+function copy() {
+    var copyText = document.querySelector("h3");
+    navigator.clipboard.writeText(copyText.textContent);
+}
+
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
-
